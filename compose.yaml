@@ -1,0 +1,9 @@
+services:
+  app:
+    build: backend
+    container_name: chat-server
+    volumes:
+      - .:/app
+    ports:
+      - "8080:8080"
+    working_dir: /app/backend
